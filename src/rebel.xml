@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.zeroturnaround.com" xsi:schemaLocation="http://www.zeroturnaround.com http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
+  <!-- 
+    Notice: ${demo.root} in add 
+    -Ddemo.root=/home/shelajev/workspace/JRebelDemo
+    to your server configuration for this to work.
+    
+    Note that FilesystemComponent also initializes itself with demo.root as a root.
+  
+  -->
+	<classpath>
+		<dir name="${demo.root}/build/classes">
+		</dir>
+	</classpath>
+
+	<web>
+		<link target="/">
+			<dir name="${demo.root}/WebContent">
+			</dir>
+		</link>
+	</web>
+
+</application>
